@@ -16,14 +16,14 @@
 			Acessar
 		</h1>
 	<form method="post">
-		<input type="email" name="Email" placeholder="Usuário">
-		<input type="password" name="Senha" placeholder="Senha">
+		<input type="email" name="email" placeholder="Usuário">
+		<input type="password" name="senha" placeholder="Senha">
 		<input type="submit" name="Entrar" value="Entrar">
 		<a href="cadastrar.php">Criar uma conta</a>
 	</form>
 	</div>
 	<?php
-	if (isset($_POST['nome']))
+	if (isset($_POST['email']))
 		{
 			$email = addslashes($_POST['email']);
 			$senha = addslashes($_POST['senha']);
@@ -31,12 +31,12 @@
 			/* Verificação de preenchimento */
 			if (!empty($email) && !empty($senha))
 			{
-				$u->conectar("acessos", "127.0.0.1", "root", "");
+				$u->conectar("acessos", "localhost", "root", "");
 				if ($u->msgErro =="")
 				{
 					if ($u->logar($email, $senha))
 					{
-
+						header("location:areaprivada.php");
 					}
 					else
 					{
