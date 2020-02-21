@@ -1,11 +1,13 @@
 body{
-	background-color: gray;
+	background-color: rgba(128,0,0)
+;
 	color: white;
+	font-family: arial;
 }
 
 input{
 	display: block;
-	height: 45px;
+	height: 55px;
 	width: 400px;
 	margin: 10px;
 	border-size: 1px;
@@ -13,21 +15,30 @@ input{
 	border-radius: 20px;
 	font-size: 16pt;
 	padding: 10px 20px;
-	cursor: pointer;
-	outline: none;
+	outline: none;	
+	border: none;
 }
 
 div#form{
-	width: 400px;
-	margin: 150px auto 10px auto;
+	width: 420px;
+	margin: 150px auto 0px auto;
 }
 
 div#form h1{
 	text-align: center;
+	font-family: arial;
 }
 
 a{
-	color: white
+	color: white;
+	display: block;
+	text-decoration: none;
+
+}
+
+a:hover{
+	text-decoration: underline;
+	display: block;
 }
 
 div#cadastroSucesso{
@@ -39,4 +50,14 @@ div#falhaCadastro{
 	width: 400px;
 	margin: 10px;
 
+}
+
+input[type=submit]{
+	cursor: pointer;
+	display: block;
+	height: 55px;
+	width: 444px;
+	background-color: rgba(255,140,0);
+	border: none;
+	color: white;
 }

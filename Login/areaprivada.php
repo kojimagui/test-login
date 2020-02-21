@@ -9,7 +9,8 @@
 
 ?>
 
-Olá
+<h2>Olá!</h2>
+
 
 <a href="sair.php"> Sair </a>
 
