@@ -1,0 +1,42 @@
+body{
+	background-color: gray;
+	color: white;
+}
+
+input{
+	display: block;
+	height: 45px;
+	width: 400px;
+	margin: 10px;
+	border-size: 1px;
+	border-color: black;
+	border-radius: 20px;
+	font-size: 16pt;
+	padding: 10px 20px;
+	cursor: pointer;
+	outline: none;
+}
+
+div#form{
+	width: 400px;
+	margin: 150px auto 10px auto;
+}
+
+div#form h1{
+	text-align: center;
+}
+
+a{
+	color: white
+}
+
+div#cadastroSucesso{
+	width: 400px;
+	margin: 10px;
+}
+
+div#falhaCadastro{
+	width: 400px;
+	margin: 10px;
+
+}
